@@ -1,59 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>玻璃杯商店</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fa/css/all.css">
+    <meta name="description" content="高品质玻璃杯在线商店">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ... 其他CSS文件 ... -->
 </head>
 <body>
-    <div class="topbar-wrapper">
-        <div class="head">
-            <ul class="head-left">
-                <li><a href="#">玻璃杯商店</a></li>
-                <li class="line">|</li>
-                <li><a href="#">关于我们</a></li>
-                <li class="line">|</li>
-                <li><a href="#">联系我们</a></li>
-                <li class="line">|</li>
-                <li><a href="#">加入我们</a></li>
-            </ul>
-            <ul class="head-right clearfix">
-                <li><a href="#"><i class="fas fa-shopping-cart"></i>购物车
-                    <div class="shopping-cart-content">
-                        <span>购物车中还没有商品，赶紧选购吧!</span>
+
+    <!-- 页头区域 -->
+    <div class="header_area">
+        <div class="container">
+            <div class="row">
+                <!-- 页头左侧 -->
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="header_heaft_area">
+                        <div class="mean_al_dv">
+                            <div class="littele_menu">语言: 中文 <i class="fa fa-caret-down"></i></div>
+                            <!-- 语言选项 -->
+                            <ul class="option">
+                                <li><a href="#">英文</a></li>
+                                <li><a href="#">日文</a></li>
+                            </ul>
+                        </div>
+                        <!-- 货币选项 -->
+                        <div class="usd_area">
+                            <div class="littele_menu">货币: CNY <i class="fa fa-caret-down"></i></div>
+                            <ul class="option">
+                                <li><a href="#">USD - 美元</a></li>
+                                <li><a href="#">EUR - 欧元</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header-wrapper">
-        <div class="header">
-            <h1 class="logo">
-                <a class="mi" href="#" title="玻璃杯商店">
-                    <img src="img/logo-glass.png" width="55px"> 
-                </a>
-            </h1>
-            <div class="header-center clearfix">
-                <ul class="nav clearfix">
-                    <li class="all-goods-wrapper"><a class="all-goods" href="#">全部商品分类</a>
-                        <!-- 商品分类菜单内容在这里动态生成 -->
-                    </li>
-                </ul>
+                </div>
+                <!-- 页头右侧 -->
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                    <div class="header_right_area">
+                        <ul>
+                            <li><a href="#">我的账户</a></li>
+                            <li><a href="#">心愿单</a></li>
+                            <li><a href="#">购物车</a></li>
+                            <li><a href="#">结账</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="main-content">
-        <div class="product-gallery">
-            <!-- 图片将在JavaScript中动态添加 -->
+
+    <!-- 网站标志和搜索区域 -->
+    <div class="header_middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo_area">
+                        <a href="index.html"><img src="img/logo-pic/logo.png" alt="玻璃杯商店"></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="header_all search_box_area">
+                        <form class="new_search" role="search" method="get" action="#">
+                            <input id="mix_search" class="search-field" placeholder="搜索产品…" value="" name="s" title="搜索" type="search">
+                            <input value="搜索" type="submit">
+                        </form>
+                    </div>
+                    <!-- 购物车 -->
+                    <div class="header_all shopping_cart_area">
+                        <!-- 购物车内容 -->
+                        <div class="widget_shopping_cart_content">
+                            <!-- ... 购物车具体内容 ... -->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2023 玻璃杯商店</p>
-    </footer>
-    <!-- 引用 script.js 文件 -->
-    <script src="script.js"></script>
-</body>
-</html>
+
+    <!-- 导航菜单 -->
+    <div class="all_menu_area">
+        <div class="container">
+            <div class="full_menu clearfix">
+                <div class="new_menu">
+                    <!-- 主导航菜单 -->
+                    <ul class="main_menu">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">新品上市</a></li>
+                        <li><a href="#">热销商品</a></li>
+                        <li><a href="#">促销活动</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="main_content">
+        <div class="container">
+            <!-- 产品展示区域 -->
+            <div class="product_gallery">
+                <!-- 动态添加产品图片 -->
+            </div>
+       
