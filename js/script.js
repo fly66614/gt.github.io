@@ -40,24 +40,24 @@ document.addEventListener('DOMContentLoaded', init);
 
 // 模拟图片数据
 const images = [
-    'img/glasses1.jpg',
-    'img/glasses2.jpg',
-    'img/glasses3.jpg',
-    'img/glasses4.jpg',
-    'img/glasses5.jpg',
-    'img/glasses6.jpg',
-    'img/glasses7.jpg',
-    'img/glasses8.jpg',
-    'img/glasses9.jpg',
-    'img/glasses10.jpg',
-    'img/glasses11.jpg',
-    'img/glasses12.jpg',
-    'img/glasses13.jpg',
-    'img/glasses14.jpg',
-    'img/glasses15.jpg',
-    'img/glasses16.jpg',
-    'img/glasses17.jpg',
-    'img/glasses18.jpg'
+    'images/glasses1.jpg',
+    'images/glasses2.jpg',
+    'images/glasses3.jpg',
+    'images/glasses4.jpg',
+    'images/glasses5.jpg',
+    'images/glasses6.jpg',
+    'images/glasses7.jpg',
+    'images/glasses8.jpg',
+    'images/glasses9.jpg',
+    'images/glasses10.jpg',
+    'images/glasses11.jpg',
+    'images/glasses12.jpg',
+    'images/glasses13.jpg',
+    'images/glasses14.jpg',
+    'images/glasses15.jpg',
+    'images/glasses16.jpg',
+    'images/glasses17.jpg',
+    'images/glasses18.jpg'
 ];
 
 // 动态添加图片到产品画廊
