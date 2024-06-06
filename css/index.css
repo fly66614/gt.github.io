@@ -1,0 +1,269 @@
+/* index.css */
+body {
+    font-size: 12px;
+}
+
+.topbar-wrapper {
+    background-color: #333;
+    width: 100%;
+    height: 40px;
+}
+
+.head {
+    margin: 0 auto;
+    height: 40px;
+    width: 1226px;
+    min-width: 1226px;
+    line-height: 40px;
+    background-color: #333;
+}
+
+/* 超链接效果 */
+.head a {
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block; /* 让a变成块元素，让高度40px都是超链接 */
+}
+
+/* 超链接移入效果 */
+.head a:hover {
+    color: #fff;
+}
+
+.head .line {
+    height: 13px;
+    color: #424242;
+    margin: 0 8px;
+}
+
+.head li {
+    float: left;
+}
+
+.head-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.app:hover::after {
+    display: block;
+}
+
+.app:hover .qrcode {
+    height: 148px;
+}
+
+.app {
+    position: relative;
+}
+
+.app::after { /* 设置小三角 */
+    display: none;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    height: 1px;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+}
+
+.head-left .qrcode {
+    position: absolute; /* 开启绝对定位，让二维码条不溢出 */
+    width: 124px;
+    height: 0px;
+    overflow: hidden;
+    left: -40px;
+    text-align: center;
+    line-height: 1; /* 重置行高（不然行高依旧是40px） */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: height 0.3s; /* 二维码高度发生变化的时间为2s */
+    background-color: white;
+    z-index: 9999;
+}
+
+.head-left .qrcode img {
+    width: 90px;
+    margin: 17px 17px;
+    margin-bottom: 10px;
+}
+
+.head-left .qrcode span {
+    font-size: 14px;
+    color: #000;
+}
+
+.head-centre {
+    float: right;
+}
+
+.head-right a {
+    position: relative;
+    width: 120px;
+    text-align: center;
+}
+
+.head-right:hover a {
+    background-color: #fff;
+    color: #ff6700;
+}
+
+.head-right:hover .shopping-cart-content {
+    height: 100px;
+}
+
+.head-right i {
+    margin-right: 2px;
+}
+
+.head-right .shopping-cart-content {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-top: none;
+    z-index: 9999;
+    transition: height 0.3s;
+}
+
+.head-right .shopping-cart-content span {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    color: #000;
+}
+
+.header-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.header-wrapper .header {
+    width: 1226px;
+    min-width: 1226px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-top: 22px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.header .mi {
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+
+.header-center {
+    float: left;
+    line-height: 100px;
+    width: 792px;
+    height: 100px;
+    padding-left: 58px;
+}
+
+.all-goods {
+    visibility: hidden;
+}
+
+.all-goods-wrapper {
+    position: relative;
+}
+
+.nav > li {
+    float: left;
+}
+
+ul .right-menu li a:link {
+    color: white;
+}
+
+ul .right-menu li a:hover {
+    color: #fff;
+    background-color: #ff6700;
+}
+
+.right-menu {
+    position: absolute;
+    line-height: 1;
+    right: -5px;
+    height: 460px;
+    width: 234px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.header-center .right-menu a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 30px;
+    font-size: 16px;
+    color: white;
+}
+
+.right-menu a i {
+    float: right;
+    line-height: 42px;
+}
+
+.header-center li a {
+    width: 100%;
+    font-size: 16px;
+    margin-right: 20px;
+    color: #000;
+}
+
+.nav li:hover a {
+    color: #ff6700;
+}
+
+.header-center .goods-info {
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: height 0.3s;
+    z-index: 9999;
+}
+
+.header-center .show-goods:hover ~ .goods-info,
+.goods-info:hover {
+    height: 228px;
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.search-wrapper {
+    width: 295px;
+    height: 50px;
+    float: right;
+    margin-top: 25px;
+}
+
+.search-wrapper .search-input {
+    border: 1px solid rgb(224, 224, 224);
+    margin-top: -1px;
+    float: left;
+    padding: 0;
+    width: 241px;
+    height: 50px;
+    font-size: 16px;
+}

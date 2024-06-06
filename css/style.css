@@ -1,0 +1,74 @@
+/* css/style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.topbar-wrapper {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-left li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.head-left a {
+    text-decoration: none;
+    color: white;
+}
+
+.head-right {
+    display: flex;
+    align-items: center;
+}
+
+.head-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-wrapper {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: auto;
+    width: 55px;
+}
+
+.header-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-image {
+    width: 30%; /* 根据需要调整图片的宽度 */
+    margin: 10px;
+    box-sizing: border-box;
+}
+.nav li {
+    display:
